@@ -28,6 +28,9 @@ dd {
   padding: 0;
   margin: 0;
 }
+p{
+  margin: 0;
+}
 
 a {
   text-decoration: none;
@@ -39,37 +42,147 @@ img {
 
 button {
   cursor: pointer;
+  padding: 0;
 }
 
-/* Home_main */
-
-.main{
+/* Home_title */
+.title {
   display: flex;
+  position: fixed;
+  top: 0;
   width: 30rem;
-  position: absolute;
   left: 50%;
   margin-left: -15rem;
   justify-content: space-between;
+  background-color: rgb(241, 241, 241)
 }
-.main .textY_center{
+
+.title .textY_center {
   padding: 2rem;
 }
-.main h1{
+
+.title h1 {
   margin: 0;
 }
 
-.main img{
+.title img {
   width: 1.2rem;
 }
-.main a:hover{
+
+.title a:hover {
   cursor: pointer;
 }
-.main .button a{
+
+.title .button a {
   margin: 0.5rem;
-  
 }
 
-.main .button{
+.title .button {
   padding: 2rem 0.5rem;
   display: flex;
+}
+
+/* 메인 틀  */
+.section {
+  width: 30rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+/* 메인 프로필 */
+.main {
+  width: 100%;
+}
+
+.main img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 30%;
+}
+
+.main_ps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_flex {
+  display: flex;
+}
+
+.main button {
+  border-radius: 4rem;
+  padding: 0.2rem;
+  font-size: 0.7rem;
+  height: 2rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #888;
+  color: #000000;
+  margin: auto 0;
+  font-weight: 600;
+}
+
+.main_text {
+  margin: auto 0 auto 1rem;
+  display: block;
+}
+
+.main_text>div:nth-child(1) {
+  font-weight: 900;
+}
+
+.main_text>div:nth-child(2) {
+  color: #888;
+}
+
+.solid {
+  border-bottom: 0.5px solid #e4e4e4;
+  margin: 1rem 0 1rem 0;
+}
+
+/* 내 멀티프로필 */
+.mt_profile {
+  width: 100%;
+}
+
+.mt_profile nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mt_profile nav p {
+  color: #888;
+}
+.mt_profile button{
+  border: none;
+  width: 10rem;
+  background-color: transparent;
+  padding-left: 6rem;
+}
+
+.mt_profile nav img {
+  width: 10px;
+  opacity: 0.6;
+}
+
+.drop_flex li:nth-child(n + 2) {
+  margin-left: 1rem;
+}
+
+
+.mt_profile ul p{
+  text-align: center;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.drop_flex{
+  display: flex;
+}
+
+.drop_flex img{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
 }
