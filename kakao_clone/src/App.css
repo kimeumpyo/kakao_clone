@@ -1,0 +1,67 @@
+* {
+  /*폰트 스타일*/
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+  color: #212121;
+}
+
+html {
+  font-size: 13px;
+  /* 1rem - 13px*/
+}
+
+/* 공통 초기화 */
+body {
+  margin: 0;
+  height: 1000px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* main_bottom_btn */
+
+.main_bottom_btn{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 30rem;
+  background-color: aqua;
+  position: fixed;
+  bottom: 0;
+}
+
+.main_bottom_btn img{
+  margin: 5px 20px;
+  width: 2rem;
+}
+.center{
+  position: absolute;
+  left: 50%;
+  margin-left: -15rem;
+}
+
+
+

@@ -1,0 +1,75 @@
+* {
+  /*폰트 스타일*/
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+  color: #212121;
+}
+
+html {
+  font-size: 13px;
+  /* 1rem - 13px*/
+}
+
+/* 공통 초기화 */
+body {
+  margin: 0;
+  height: 1000px;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Home_main */
+
+.main{
+  display: flex;
+  width: 30rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -15rem;
+  justify-content: space-between;
+}
+.main .textY_center{
+  padding: 2rem;
+}
+.main h1{
+  margin: 0;
+}
+
+.main img{
+  width: 1.2rem;
+}
+.main a:hover{
+  cursor: pointer;
+}
+.main .button a{
+  margin: 0.5rem;
+  
+}
+
+.main .button{
+  padding: 2rem 0.5rem;
+  display: flex;
+}
