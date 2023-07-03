@@ -28,7 +28,8 @@ dd {
   padding: 0;
   margin: 0;
 }
-p{
+
+p {
   margin: 0;
 }
 
@@ -54,7 +55,8 @@ button {
   left: 50%;
   margin-left: -15rem;
   justify-content: space-between;
-  background-color: rgb(241, 241, 241)
+  background-color: rgb(241, 241, 241);
+  z-index: 10;
 }
 
 .title .textY_center {
@@ -154,7 +156,8 @@ button {
 .mt_profile nav p {
   color: #888;
 }
-.mt_profile button{
+
+.mt_profile button {
   border: none;
   width: 10rem;
   background-color: transparent;
@@ -166,23 +169,313 @@ button {
   opacity: 0.6;
 }
 
-.drop_flex li:nth-child(n + 2) {
+.mt_drop li:nth-child(n + 2) {
   margin-left: 1rem;
 }
 
-
-.mt_profile ul p{
+.mt_profile ul p {
   text-align: center;
   font-weight: 900;
   font-size: 1rem;
 }
 
-.drop_flex{
+.mt_drop {
   display: flex;
 }
 
-.drop_flex img{
+.mt_drop img {
   width: 3rem;
   height: 3rem;
   border-radius: 30%;
 }
+
+/* 생일인 친구 */
+.bd_profile {
+  width: 100%;
+}
+
+.bd_profile nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd_profile nav p {
+  color: #888;
+}
+
+.bd_profile button {
+  border: none;
+  width: 10rem;
+  background-color: transparent;
+  padding-left: 6rem;
+}
+
+.bd_profile nav img {
+  width: 10px;
+  opacity: 0.6;
+}
+
+.bd_drop li:nth-child(n + 2) {
+  margin-top: 1rem;
+}
+
+.bd_drop li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd_drop nav div {
+  margin-left: 1rem;
+}
+
+.bd_drop p:nth-child(1) {
+  font-weight: 900;
+  color: #000000;
+}
+
+.bd_drop p:nth-child(2) {
+  font-size: 0.5rem;
+  color: #888;
+}
+
+.bd_drop li img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  opacity: 1;
+}
+
+.bd_drop li button {
+  border: 1px solid #ff0000;
+  padding: 2px;
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  display: flex;
+  margin: auto 0;
+}
+
+.bd_drop button img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* 업데이트한 친구 */
+.ud_profile {
+  width: 100%;
+}
+
+.ud_profile nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ud_profile nav p {
+  color: #888;
+}
+
+.ud_profile button {
+  border: none;
+  width: 10rem;
+  background-color: transparent;
+  padding-left: 6rem;
+}
+
+.ud_profile nav img {
+  width: 10px;
+  opacity: 0.6;
+}
+
+.ud_drop li:nth-child(n + 2) {
+  margin-left: 1rem;
+}
+
+.ud_profile ul p {
+  text-align: center;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.ud_drop {
+  display: flex;
+}
+
+.ud_drop img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+}
+
+/* 추천친구 */
+.pl_profile {
+  width: 100%;
+}
+
+.pl_profile nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pl_profile nav p {
+  color: #888;
+}
+
+.pl_profile button {
+  border: none;
+  width: 10rem;
+  background-color: transparent;
+  padding-left: 6rem;
+}
+
+.pl_profile nav img {
+  width: 10px;
+  opacity: 0.6;
+}
+
+.pl_drop li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pl_drop nav div {
+  margin: auto 1rem;
+}
+
+.pl_drop p:nth-child(1) {
+  font-weight: 900;
+  color: #000000;
+}
+
+.pl_drop li img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  opacity: 1;
+}
+
+.pl_drop button {
+  margin: auto 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.pl_drop button img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* 채널 */
+.cn_profile {
+  width: 100%;
+}
+
+.cn_profile nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cn_profile nav p {
+  color: #888;
+}
+
+.cn_profile button {
+  border: none;
+  width: 10rem;
+  background-color: transparent;
+  padding-left: 6rem;
+}
+
+.cn_profile nav img {
+  width: 10px;
+  opacity: 0.6;
+}
+
+.cn_drop li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cn_drop nav div {
+  margin: auto 1rem;
+}
+
+.cn_drop p:nth-child(1) {
+  font-weight: 900;
+  color: #000000;
+}
+
+.cn_drop li img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  opacity: 1;
+}
+
+.cn_drop button {
+  margin: auto 0;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.cn_drop button img {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* 채널추가 */
+
+.cn_add {
+  opacity: 1;
+  display: flex;
+}
+
+.cn_add li:nth-child(n+2) {
+  margin-left: 1rem;
+}
+
+.cn_add li {
+  width: 8rem;
+  height: 10rem;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.cn_position {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.cn_position img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 30%;
+  margin: auto;
+  margin: 0.5rem auto 0.5rem;
+}
+
+.cn_position p:nth-child(2) {
+  font-weight: 900;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.cn_position p:nth-child(3) {
+  color: #888;
+  font-size: 0.8rem;
+  margin: 0.5rem auto 0.5rem;
+  padding: 0 0.8rem;
+}
+
+.cn_position button {
+  font-size: 1rem;
+  padding: 0;
+  width: 4rem;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: auto;
+}
+
+
