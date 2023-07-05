@@ -57,14 +57,20 @@ button {
   justify-content: space-between;
   background-color: rgb(241, 241, 241);
   z-index: 10;
+  height: 4rem;
 }
 
 .title .textY_center {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title h1 {
-  margin: 0;
+  align-items: center;
+  display: block;
+  padding: 0;
+  margin-left: 1rem;
 }
 
 .title img {
@@ -73,6 +79,7 @@ button {
 
 .title a:hover {
   cursor: pointer;
+  
 }
 
 .title .button a {
@@ -80,7 +87,7 @@ button {
 }
 
 .title .button {
-  padding: 2rem 0.5rem;
+  margin: auto 1rem auto 0;
   display: flex;
 }
 
@@ -425,10 +432,18 @@ button {
 }
 
 /* 채널추가 */
+.img_ss{
+  position: relative;
+  background-color: #ffffff;
+  height: 10rem;
+  width: 100%;
+  overflow:hidden;
+}
 
 .cn_add {
-  opacity: 1;
   display: flex;
+  margin: 0;
+  width: 71rem;
 }
 
 .cn_add li:nth-child(n+2) {
@@ -477,5 +492,98 @@ button {
   border-radius: 5px;
   margin: auto;
 }
+#endtext{
+  color: #888;
+  font-size: 0.8rem;
+  margin: 0.5rem 0 ;
+  text-align: right;
+}
+
+/* 친구 */
+.friends_profile {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.friends_profile nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friends_profile nav p {
+  color: #888;
+}
+
+.friends_profile button {
+  border: none;
+  width: 10rem;
+  background-color: transparent;
+  padding-left: 6rem;
+}
+
+.friends_profile nav img {
+  width: 10px;
+  opacity: 0.6;
+}
+
+.friends_drop li:nth-child(n + 2) {
+  margin-top: 1rem;
+}
+
+.friends_drop li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.friends_drop nav div {
+  margin-left: 1rem;
+}
+
+.friends_drop p:nth-child(1) {
+  font-weight: 900;
+  color: #000000;
+}
+
+.friends_drop p:nth-child(2) {
+  font-size: 0.5rem;
+  color: #888;
+}
+
+.friends_drop li img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  opacity: 1;
+}
+
+.friends_drop li button {
+  border: 1px solid #00ff0d;
+  padding: 2px;
+  max-width: 8rem;
+  height: 1.5rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  display: flex;
+  margin: auto 0;
+}
+
+.friends_drop button img {
+  width: 1rem;
+  height: 1rem;
+}
+.friends_drop button p:nth-child(1){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
+.friends_drop button p:nth-child(2){
+  font-weight: 900;
+  color: #00ff0d;
+  margin: 0 0.5rem;
+}
+
+
+
 
 
