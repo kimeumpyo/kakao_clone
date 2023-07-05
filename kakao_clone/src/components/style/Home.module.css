@@ -103,6 +103,7 @@ button {
 /* 메인 프로필 */
 .main {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .main img {
@@ -153,6 +154,7 @@ button {
 /* 내 멀티프로필 */
 .mt_profile {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .mt_profile nav {
@@ -199,6 +201,7 @@ button {
 /* 생일인 친구 */
 .bd_profile {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .bd_profile nav {
@@ -272,6 +275,7 @@ button {
 /* 업데이트한 친구 */
 .ud_profile {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .ud_profile nav {
@@ -318,6 +322,7 @@ button {
 /* 추천친구 */
 .pl_profile {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .pl_profile nav {
@@ -376,6 +381,7 @@ button {
 /* 채널 */
 .cn_profile {
   width: 100%;
+  padding: 0 1rem;
 }
 
 .cn_profile nav {
@@ -437,7 +443,8 @@ button {
   background-color: #ffffff;
   height: 10rem;
   width: 100%;
-  overflow:hidden;
+  overflow-x : auto;
+  display: flex;
 }
 
 .cn_add {
@@ -503,6 +510,7 @@ button {
 .friends_profile {
   width: 100%;
   margin-bottom: 5rem;
+  padding: 0 1rem;
 }
 
 .friends_profile nav {

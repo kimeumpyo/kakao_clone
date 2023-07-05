@@ -140,7 +140,7 @@ function BirthdayDropdown() {
   let month = ('0' + (today.getMonth() + 1)).slice(-2);
   let day = ('0' + today.getDate()).slice(-2);
 
-  let dateString = "오늘 " + month  + '월 ' + day + '일';
+  let dateString = "오늘 " + month + '월 ' + day + '일';
 
   return (
     <>
@@ -176,7 +176,7 @@ function BirthdayDropdown() {
   );
 }
 
-  
+
 
 function UpdateDropdown() {
 
@@ -236,59 +236,125 @@ function ChannelDropdown() {
   );
 }
 
+// function Channel() {
+//   // 드래그 상태 저장을 위한 state
+//   // isDragging이 true이면 드래그 중인 상태
+//   const [isDragging, setIsDragging] = useState(false);
+
+//   // 시작 지점, 드래그 중인 위치 저장을 위한 state
+//   const [startX, setStartX] = useState(0);
+//   const [dragX, setDragX] = useState(0);
+
+//   console.log("startX", startX)
+//   console.log("dragX", dragX)
+
+
+//   const handleMouseDown = (e) => {
+//     // 이미지에서 마우스 클릭(터치) 이벤트가 발생한 경우
+//     if (e.target.className === styles.cn_position) {
+//       setIsDragging(true);
+//       // 시작 지점 좌표 계산
+//       setStartX(e.clientX || e.touches[0].clientX);
+//     }
+//   };
+
+//   const handleMouseMove = (e) => {
+//     if (isDragging) {
+//       // 드래그 중인 위치 계산
+//       const x = e.clientX || e.touches[0].clientX;
+
+//       setDragX(x - startX);
+//       console.log("x", x)
+//     }
+//   };
+
+//   const handleMouseUp = () => {
+//     setIsDragging(false);
+//     // 드래그 상태 해제시, 드래그 중인 위치 정보 초기화
+//     setDragX(dragX);
+//   };
+
+//   return (
+
+//       <div className={styles.img_ss}>
+//         <ul 
+//           onMouseDown={handleMouseDown}
+//           onMouseMove={handleMouseMove}
+//           onMouseUp={handleMouseUp}
+//           onTouchStart={handleMouseDown}
+//           onTouchMove={handleMouseMove}
+//           onTouchEnd={handleMouseUp}
+//           className={styles.cn_add}
+//           style={{ userSelect: 'none', position: 'relative' }} // 드래그 시 셀렉션 방지, 상위 컨테이너에 position 속성 필요
+//         >
+//           {/* 드래그 중인 위치에 따라 이미지 이동 */}
+//           <li style={{ userSelect: 'none',  marginLeft: dragX }}> 
+//             <div className={styles.cn_position} >
+//               <img src="/images/watermelon.jpg"></img>
+//               <p>수박나라</p>
+//               <p>이렇게 맛있는 수박은 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//           <li>
+//             <div className={styles.cn_position} >
+//               <img src="/images/apple.jpg"></img>
+//               <p>사과나라</p>
+//               <p>이렇게 맛있는 사과는 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//           <li>
+//             <div className={styles.cn_position} >
+//               <img src="/images/banana.jpg"></img>
+//               <p>바나나나라</p>
+//               <p>이렇게 맛있는 바나나는 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//           <li>
+//             <div className={styles.cn_position} >
+//               <img src="/images/mango.jpg"></img>
+//               <p>망고나라</p>
+//               <p>이렇게 맛있는 망고는 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//           <li>
+//             <div className={styles.cn_position} >
+//               <img src="/images/kiwi.jpg"></img>
+//               <p>키위나라</p>
+//               <p>이렇게 맛있는 키위는 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//           <li>
+//             <div className={styles.cn_position} >
+//               <img src="/images/grape.jpg"></img>
+//               <p>포도나라</p>
+//               <p>이렇게 맛있는 포도는 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//           <li>
+//             <div className={styles.cn_position} >
+//               <img src="/images/cherry.jpg"></img>
+//               <p>체리나라</p>
+//               <p>이렇게 맛있는 체리는 없었다!</p>
+//               <button>채널추가</button>
+//             </div>
+//           </li>
+//         </ul>
+//       </div>
+//   );
+// }
+
 function Channel() {
-  // 드래그 상태 저장을 위한 state
-  // isDragging이 true이면 드래그 중인 상태
-  const [isDragging, setIsDragging] = useState(false);
-
-  // 시작 지점, 드래그 중인 위치 저장을 위한 state
-  const [startX, setStartX] = useState(0);
-  const [dragX, setDragX] = useState(0);
-
-  console.log("startX", startX)
-  console.log("dragX", dragX)
-
-
-  const handleMouseDown = (e) => {
-    // 이미지에서 마우스 클릭(터치) 이벤트가 발생한 경우
-    if (e.target.className === styles.cn_position) {
-      setIsDragging(true);
-      // 시작 지점 좌표 계산
-      setStartX(e.clientX || e.touches[0].clientX);
-    }
-  };
-
-  const handleMouseMove = (e) => {
-    if (isDragging) {
-      // 드래그 중인 위치 계산
-      const x = e.clientX || e.touches[0].clientX;
-
-      setDragX(x - startX);
-      console.log("x", x)
-    }
-  };
-
-  const handleMouseUp = () => {
-    setIsDragging(false);
-    // 드래그 상태 해제시, 드래그 중인 위치 정보 초기화
-    setDragX(dragX);
-  };
-
   return (
-    
+    <>
       <div className={styles.img_ss}>
-        <ul 
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onTouchStart={handleMouseDown}
-          onTouchMove={handleMouseMove}
-          onTouchEnd={handleMouseUp}
-          className={styles.cn_add}
-          style={{ userSelect: 'none', position: 'relative' }} // 드래그 시 셀렉션 방지, 상위 컨테이너에 position 속성 필요
-        >
-          {/* 드래그 중인 위치에 따라 이미지 이동 */}
-          <li style={{ userSelect: 'none',  marginLeft: dragX }}> 
+        <ul className={styles.cn_add}>
+          <li>
             <div className={styles.cn_position} >
               <img src="/images/watermelon.jpg"></img>
               <p>수박나라</p>
@@ -346,7 +412,8 @@ function Channel() {
           </li>
         </ul>
       </div>
-  );
+    </>
+  )
 }
 
 function FriendDropdown() {
