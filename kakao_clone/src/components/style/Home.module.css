@@ -382,6 +382,7 @@ button {
 .cn_profile {
   width: 100%;
   padding: 0 1rem;
+  overflow: hidden;
 }
 
 .cn_profile nav {
@@ -441,36 +442,39 @@ button {
 .img_ss{
   position: relative;
   background-color: #ffffff;
-  height: 10rem;
+  height: 12rem;
   width: 100%;
-  overflow-x : auto;
+  overflow-y: hidden;
   display: flex;
 }
 
-.cn_add {
+.ch_add {
   display: flex;
   margin: 0;
-  width: 71rem;
+  /* width: 71rem; */
+  width: 200%;
+  transform: translate(0, 0);
 }
 
-.cn_add li:nth-child(n+2) {
+.ch_add li:nth-child(n+2) {
   margin-left: 1rem;
 }
 
-.cn_add li {
+.ch_add li {
   width: 8rem;
   height: 10rem;
   background-color: #eee;
   border-radius: 5px;
+  
 }
 
-.cn_position {
+.ch_position {
   display: flex;
   flex-direction: column;
   margin: auto 0;
 }
 
-.cn_position img {
+.ch_position img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 30%;
@@ -478,20 +482,20 @@ button {
   margin: 0.5rem auto 0.5rem;
 }
 
-.cn_position p:nth-child(2) {
+.ch_position p:nth-child(2) {
   font-weight: 900;
   font-size: 0.9rem;
   margin: 0 auto;
 }
 
-.cn_position p:nth-child(3) {
+.ch_position p:nth-child(3) {
   color: #888;
   font-size: 0.8rem;
   margin: 0.5rem auto 0.5rem;
   padding: 0 0.8rem;
 }
 
-.cn_position button {
+.ch_position button {
   font-size: 1rem;
   padding: 0;
   width: 4rem;
@@ -499,6 +503,7 @@ button {
   border-radius: 5px;
   margin: auto;
 }
+
 #endtext{
   color: #888;
   font-size: 0.8rem;
