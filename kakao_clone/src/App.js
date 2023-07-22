@@ -13,7 +13,6 @@ import Shopping from "./components/Shopping";
 import More from "./components/More";
 import NotFound from "./components/NotFound";
 
-
 export default function App() {
   return (
     <Router>
